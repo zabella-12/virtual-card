@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+
+    --color-body: #E3E3E3;
+    --container: #FFFEFE;
+    --card: #A382B7;
+    --color-font: #FFFFFF;
+
+}
+
+body{
+    background-color: var(--color-body);
+    font-family: 'Roboto', sans-serif;
+    color: var(--color-font);
+}
+
+.container-one {
+    position: relative;
+    width: 765px;
+    height: 461px;
+    margin: 10% auto;
+    background-color: var(--container);
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+
+.card {
+    position: absolute;
+    margin: -10% 20% 0 15.5%;
+    width: 525px;
+    height: 288px;
+    background-color: var(--card);
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+}
+
+
+
+
+
+.card-up {
+    display: flex;
+    width: 80%;
+    margin: 4% auto;
+    justify-content: space-between;
+       
+}
+
+.card-data {
+    width: 90%;
+    margin: auto;
+}
+
+.card-data-two{
+    margin-top: 5%;
+    display: flex;
+    gap: 30px;
+    
+}
+
+.holder {
+    flex-grow: 3;
+}
+
+.card-holder {
+    display: grid;
+}
+
+.card-expires{
+    display: grid;
+}
+
+p{
+    display: inline-block;
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 5px;
+}
+h1{
+    letter-spacing: 5px;
+}
+
+h4 {
+   
+    display: inline-block;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+form {
+    margin: auto;
+    width: 90%;
+    padding-top: 35%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px 0;
+    justify-content: space-around;
+
+    }
+
+input{
+    
+    height: 40px;
+    background: rgba(196, 196, 196, 0.16);
+    border-radius: 10px;
+    border: none;
+    
+}
+
+#number-card, #holder{
+    width: 300px;
+}
+
+
+
+::-webkit-input-placeholder{
+
+    color: #000000b0;
+    padding-left: 10px;
+    font-size: 20px;
+}
+
+a {
+        color: var(--color-font);
+        text-decoration: none;
+        font-size: 20px;
+}
+
+.repo{
+    margin: auto;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    width:300px;
+    height: 35px;
+    background-color: var(--card);
+   
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href=".\css\style-index.css">
+    <link rel="icon" href=".\assets\card-sale.png" type="icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>Pay</title>
+</head>
+
+<body>
+    <main>
+        <div class="container-one">
+            <div class="card">
+                <div class="card-up">
+                    <img src=".\assets\chip card.svg" alt="icon de chip de cartão">
+                    <img src=".\assets\logo bank.svg" alt="logo Friends Bank">
+                </div>
+                <div class="card-data">
+                    <p>Card Number</p>
+                    <h1 id="write-number-card">#### #### #### ####</h1>
+                    <div class="card-data-two">
+                        <div class="holder">
+                            <div class="card-holder">
+                                <p>Card Holder</p>
+                                <h4 id="write-full-name">Full Name</h4>
+                            </div>
+                        </div>
+                        <div class="card-expires">
+                            <p> Expires</p>
+                            <h4 id="write-date-expires">MM/YY</h4>
+                        </div>
+                        <div class="card-csv">
+                            <p>CSV</p>
+                            <h1 id="write-number-csv">###</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <form id="forms">
+                <label for="Card Number">
+                    <input type="text" placeholder="Card Number" id="number-card" maxlength="19"
+                        onkeyup="maskNumberCard()">
+                </label>
+                <label for="Card Expires">
+                    <input type="text" pattern="[0-9]*" placeholder="MM/YY" id="expires" maxlength="5"
+                        onkeyup="maskNumberExpires()">
+                </label>
+                <label for="Card Holder">
+                    <input type="text" placeholder="Name on Card" id="holder">
+                </label>
+                <label for="CSV">
+                    <input type="number" placeholder="CSV" id="csv">
+                </label>
+            </form>
+        </div>
+        </div>
+
+        <div class="repo"> <a href="http://">Link do repositório do Git Hub</a></div>
+
+    </main>
+    <script src="card.js"></script>
+</body>
+
+</html>
